@@ -15,7 +15,7 @@ module "elasticsearch" {
   elasticsearch_version   = "6.5"
   zone_awareness_enabled  = "false"
   instance_type           = "t2.small.elasticsearch"
-  instance_count          = 2
+  instance_count          = 1
   encrypt_at_rest_enabled = true
 
   advanced_options {
