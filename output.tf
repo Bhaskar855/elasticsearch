@@ -15,11 +15,11 @@ output "domain_endpoint" {
 }
 
 output "elasticsearch_user_iam_role_name" {
-  value       = join(",", aws_iam_role.elasticsearch_user.*.name)
+  value       = join(",", aws_iam_role.elasticsearch1.*.name)
   description = "The name of the IAM role to allow access to Elasticsearch cluster"
 }
 
 output "elasticsearch_user_iam_role_arn" {
-  value       = join(",", aws_iam_role.elasticsearch_user.*.arn)
+  value       = join(",", aws_iam_role.elasticsearch1.*.arn)
   description = "The ARN of the IAM role to allow access to Elasticsearch cluster"
 }
