@@ -1,6 +1,7 @@
 provider "aws" {
-  region  = var.region
-  version = "~> 2.0"
+  region     = "us-east-2"
+  access_key = "AKIAYR5PC2SIRAVFYPGI"
+  secret_key = "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"
 }
 
 resource "aws_elasticsearch_domain" "default" {
