@@ -1,5 +1,5 @@
 # Role that pods can assume for access to elasticsearch and kibana
-resource "aws_iam_role" "elastic_search" {
+resource "aws_iam_role" "elasticsearch1" {
   name               = "module.user_label.id"
   assume_role_policy = join("", data.aws_iam_policy_document.assume_role.*.json)
   description        = "IAM Role to assume to access the Elasticsearch module.label.id cluster"
